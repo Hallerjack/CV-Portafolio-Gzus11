@@ -1,11 +1,18 @@
 /* style.css */
 
 /* --- ESTILOS GENERALES DEL CUERPO --- */
+
 body {
     margin: 0;
     padding-top: 60px; 
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+}
+
+/* --- Estandarización de fuentes --- */
+
+h1, h2, h3, h4, h5, h6, p, li, a {
+    font-family: "Montserrat";
 }
 
 /* --- ESTILOS DEL CONTENIDO PRINCIPAL (main) --- */
@@ -16,6 +23,12 @@ main {
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+}
+
+/* Estilo de lista Datos personales*/
+
+.list-unstyled {
+    line-height: 2em;
 }
 
 /* Estilo para la imagen de perfil */
@@ -33,12 +46,33 @@ section {
     border-bottom: 1px solid #ddd;
 }
 
+/* --- ESTILOS DE TÍTULOS GENERALES --- */
+
+section h4 {
+    margin-top: 1.5em;
+}
+
+section h5 {
+    margin-top: 1em;
+}
+
+section p {
+    font-size: 1em;
+    line-height: 2em;
+}
+
+section li {
+    font-size: 1em;
+    line-height: 2em;
+}
+
 section:last-child {
     border-bottom: none;
 }
 
 /* --- ESTILOS DE TÍTULOS DE SECCIÓN (Rectángulo Gris Claro) --- */
 section h3 {
+    font-size: 1.4em;
     background-color: #f8f9fa; 
     padding: 0.5rem 1rem; 
     display: inline-block; 
@@ -78,27 +112,31 @@ section h3 {
 
 /* Contenido de texto de la tarjeta */
 .card-content {
-    padding: 15px;
+    padding: 15px 15px 30px 15px;
+}
+
+.card-content p {
+    line-height: 1.5em;
 }
 
 .card-title {
-    font-size: 1.25em;
+    font-size: 1.2em;
     margin-top: 0;
     margin-bottom: 5px;
     color: #333;
 }
 
 .card-subtitle {
-    font-size: 0.9em;
+    font-size: 1em;
     color: #666;
-    margin-bottom: 15px;
+    padding: 10px 0px 15px 0px;
     font-weight: 400;
 }
 
 .card-text {
     font-size: 0.95em;
     color: #444;
-    margin-bottom: 20px;
+    margin: 10px 0px 20px 0px;
 }
 
 /* Estilo del botón "Ver Proyecto" */
